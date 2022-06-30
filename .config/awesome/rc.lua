@@ -581,3 +581,4 @@ awesome.set_preferred_icon_size(32)
 -- My autostart items
 awful.spawn.single_instance("picom --experimental-backends", {})
 awful.spawn.single_instance("nm-applet", {})
+awful.spawn.single_instance("blueman-applet", {})
