@@ -4,10 +4,10 @@
 
 # terminal emulator
 super + Return
-	gnome-terminal
+	alacritty
 
 # program launcher
-super + @space
+super + space
 	rofi -show combi
 
 # make sxhkd reload its configuration files:

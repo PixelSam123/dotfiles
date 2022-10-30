@@ -1,6 +1,6 @@
 configuration {
 modi: "window,run,combi";
-font: "Iosevka Term 14";
+font: "Iosevka 21";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -146,4 +146,6 @@ combi-modi: "window,drun";
   }
 }
 
-@theme "Monokai"
+//@theme "Monokai"
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
