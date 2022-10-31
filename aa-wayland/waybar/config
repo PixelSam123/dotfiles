@@ -1,0 +1,28 @@
+{
+    "layer": "top",
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["pulseaudio", "temperature", "network", "clock", "tray"],
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true
+    },
+    "pulseaudio": {
+        "format": "VOL {volume}%"
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "interval": 2,
+        "format": "CPU {temperatureC}°C"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%)"
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}
