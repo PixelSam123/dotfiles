@@ -12,14 +12,16 @@
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
-        "interval": 2,
+        "interval": 1,
         "format": "CPU {temperatureC}°C"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%)"
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "interval": 30
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "interval": 30
     },
     "tray": {
         "icon-size": 16,
