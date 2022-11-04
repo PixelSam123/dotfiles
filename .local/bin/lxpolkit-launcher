@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~
+
+sleep 0.5
+lxpolkit &
