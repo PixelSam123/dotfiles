@@ -1,11 +1,12 @@
 configuration {
-modi: "window,run,combi";
-font: "Iosevka 21";
+	modi: "window,run,combi";
+	font: "Iosevka 21";
+	combi-modi: "window,drun";
+	show-icons: true;
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-/*	show-icons: false;*/
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -32,7 +33,6 @@ font: "Iosevka 21";
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
-combi-modi: "window,drun";
 /*	matching: "normal";*/
 /*	tokenize: true;*/
 /*	m: "-5";*/
@@ -136,16 +136,33 @@ combi-modi: "window,drun";
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
+	timeout {
+		action: "kb-cancel";
+		delay:  0;
+	}
+	filebrowser {
+		directories-first: true;
+		sorting-method:    "name";
+	}
 }
 
-//@theme "Monokai"
-//@theme "/usr/share/rofi/themes/android_notification.rasi"
 @theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+
+* {
+	foreground: rgb ( 205, 214, 244 );
+	separatorcolor: rgb ( 205, 214, 244 );
+	selected-normal-foreground: rgb ( 245, 224, 220 );
+	selected-normal-background: rgb ( 49, 50, 68 );
+	active-foreground: rgb ( 250, 179, 135 );
+	active-background: rgb ( 24, 24, 37 );
+	selected-active-foreground: rgb ( 249, 226, 175 );
+	selected-active-background: rgb ( 49, 50, 68 );
+}
+
+window {
+	background-color: rgb ( 24, 24, 37 );
+}
+
+element-icon {
+	size: 24px;
+}
