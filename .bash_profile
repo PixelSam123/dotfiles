@@ -1,28 +1,27 @@
-# .bash_profile
+#
+# ~/.bash_profile
+#
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
+[[ -f ~/.bashrc ]] && . ~/.bashrc
 
-# User specific environment and startup programs
-
-echo 2908 | sudo -S modprobe i2c_dev
-export QT_QPA_PLATFORMTHEME=qt5ct
+# My settings
 
 # Only on bspwm
-if [ $GDMSESSION = bspwm ]; then
+if [ $DESKTOP_SESSION = bspwm ]; then
+	export _JAVA_AWT_WM_NONREPARENTING=1
+	export QT_QPA_PLATFORMTHEME=qt5ct
 	export GDK_SCALE=2
 	export GDK_DPI_SCALE=0.5
-  export _JAVA_AWT_WM_NONREPARENTING=1
+	export QT_AUTO_SCREEN_SET_FACTOR=0
+	export QT_SCALE_FACTOR=2
+	export QT_FONT_DPI=96
 fi
 
+export PATH=$PATH:~/.local/bin
 . "$HOME/.cargo/env"
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 
 # Added by Toolbox App
 export PATH="$PATH:/home/sam/.local/share/JetBrains/Toolbox/scripts"
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

@@ -1,8 +1,1 @@
-#include "iterm-Monokai_Soda.Xresources"
-Xft.dpi: 120
-Xft.hintstyle: hintmedium
-Xft.rgba: rgb
-
-XTerm*faceName: Iosevka Term
-XTerm*faceSize: 11
-XTerm*selectToClipboard: true
+Xft.dpi: 192

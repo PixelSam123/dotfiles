@@ -1,19 +1,19 @@
 #!/usr/bin/sh
 
-lxpolkit &
-blueman-applet &
+/usr/lib/polkit-kde-authentication-agent-1 &
+# blueman-applet &
 dunst &
-picom --experimental-backends &
+picom &
 killall sxhkd; sxhkd &
 /home/sam/.config/polybar/launch.sh &
 
 # System XDG Autostart
-abrt-applet --gapplication-service &
+# abrt-applet --gapplication-service &
 
 # User XDG Autostart
 /home/sam/gtk4-scaler.sh &
 easyeffects --gapplication-service &
-openrgb --profile "Sea Blue Dim" &
+# openrgb --profile "Sea Blue Dim" &
 
 feh --bg-fill "/home/sam/Pictures/mihu-italo-monument enlarge.png"
 xsetroot -cursor_name left_ptr

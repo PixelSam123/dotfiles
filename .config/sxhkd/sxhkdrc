@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	konsole
 
 # program launcher
 super + space
@@ -27,6 +27,10 @@ XF86AudioMute
 # screenshot
 Print
 	flameshot gui
+
+# push to talk muter
+{_,@}button9
+	pactl set-sink-mute 0 {1,0}
 
 #
 # bspwm hotkeys
@@ -51,6 +55,10 @@ super + y
 # swap the current node and the biggest node
 super + g
 	bspc node -s biggest
+
+# togglesplit equivalent from Hyprland
+super + o
+	bspc node @parent -R 90
 
 #
 # state/flags
@@ -78,7 +86,7 @@ super + {p,b,comma,period}
 
 # focus the next/previous node in the current desktop
 super + {_,shift + }c
-	bspc node -f {next,prev}.local
+	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -87,12 +95,6 @@ super + bracket{left,right}
 # focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
-
-# focus the older or newer node in the focus history
-super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}

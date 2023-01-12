@@ -160,7 +160,8 @@ configuration {
 }
 
 window {
-	background-color: rgb ( 24, 24, 37 );
+	background-color: rgba ( 24, 24, 37, 0.94 );
+	width: 1500px;
 }
 
 element-icon {
