@@ -1,9 +1,0 @@
-#!/bin/bash
-
-cd ~
-
-. /etc/profile
-. ./.bash_profile
-export _JAVA_AWT_WM_NONREPARENTING=1
-
-exec Hyprland
