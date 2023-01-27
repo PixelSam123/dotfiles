@@ -18,10 +18,3 @@ if [ $DESKTOP_SESSION = bspwm ]; then
 fi
 
 export PATH=$PATH:~/.local/bin
-. "$HOME/.cargo/env"
-
-# Added by Toolbox App
-export PATH="$PATH:/home/sam/.local/share/JetBrains/Toolbox/scripts"
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
