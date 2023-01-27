@@ -12,6 +12,7 @@ if [ $DESKTOP_SESSION = bspwm ]; then
 	export QT_QPA_PLATFORMTHEME=qt5ct
 	export QT_AUTO_SCREEN_SCALE_FACTOR=0
 	export QT_SCALE_FACTOR=1.25
+	export QT_FONT_DPI=96
 fi
 
 export PATH=$PATH:~/.local/bin
