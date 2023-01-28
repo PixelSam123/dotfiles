@@ -1,0 +1,42 @@
+(defwindow bar
+           :geometry (geometry :x "0%"
+                               :y "0%"
+                               :width "1836px"
+                               :height "28px"
+                               :anchor "top left")
+           :reserve (struts :distance "56px" :side "top")
+           :stacking "bg"
+           (barwidget))
+
+(defwidget barwidget []
+           (centerbox :class "centerbox"
+                      (tags) "${wmstate.window_title}" (rightside)))
+
+(defwidget tags []
+           (box :class "tags"
+                :halign "start"
+                (for tag in '${wmstate.workspaces[0].tags}'
+                     (button :class {tag.mine   ? "tag-mine"   :
+                                     tag.urgent ? "tag-urgent" :
+                                     tag.busy   ? "tag-busy"   :
+                                                  "tag-normal" }
+                             :onclick 'leftwm-command "SendWorkspaceToTag 0 ${tag.index}"'
+                             "${tag.name}"))))
+
+(defwidget rightside []
+           (box :class "rightside"
+                :halign "end"
+                "VOL ${volume}" time))
+
+; Reusables or "magical" variables/widgets
+(defpoll volume
+         :interval "0.1s"
+         "pactl get-sink-volume 0 | grep -Po \\\\d+% | head -n 1")
+
+(defpoll time
+         :interval "60s"
+         'date +%H:%M')
+
+(deflisten wmstate
+           :initial '{"window_title":"WM-not-loaded","workspaces":[{"layout":"","tags":[{"name":"1","index":0,"mine":false,"urgent":false,"busy":false}]}]}'
+           "leftwm state")

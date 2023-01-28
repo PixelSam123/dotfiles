@@ -1,0 +1,44 @@
+* {
+    all: unset;
+}
+
+.bar {
+    font-family: monospace;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+.rightside {
+    > * {
+        margin: 4px;
+        padding: 0 8px;
+        background-color: #313244;
+    }
+}
+
+// Tags widget
+.tags {
+    margin: 4px;
+    background-color: #313244;
+}
+
+.tags button {
+    padding: 0 8px;
+}
+
+.tag-mine {
+    background-color: #f38ba8;
+    color: #1e1e2e;
+}
+
+.tag-urgent {
+    color: #f38ba8;
+}
+
+.tag-busy {
+    color: #cdd6f4;
+}
+
+.tag-normal {
+    color: #6c7086;
+}
