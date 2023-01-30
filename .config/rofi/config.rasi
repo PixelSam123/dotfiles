@@ -1,8 +1,9 @@
 configuration {
 	modi: "window,run,combi";
-	font: "Iosevka 21";
+	font: "Iosevka Nerd Font 11";
 	combi-modi: "window,drun";
 	show-icons: true;
+	dpi: 0;
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -37,7 +38,6 @@ configuration {
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	filter: ;*/
-/*	dpi: -1;*/
 /*	threads: 0;*/
 /*	scroll-method: 0;*/
 /*	window-format: "{w}    {c}   {t}";*/
