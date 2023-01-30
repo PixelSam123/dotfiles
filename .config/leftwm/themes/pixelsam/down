@@ -9,3 +9,4 @@ killall dunst
 killall picom
 killall stalonetray
 eww kill
+killall easyeffects
