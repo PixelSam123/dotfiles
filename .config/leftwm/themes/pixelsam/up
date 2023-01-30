@@ -15,5 +15,4 @@ feh --bg-fill "/home/sam/Pictures/mihu-italo-monument enlarge.png"
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 # User XDG Autostart
-/home/sam/gtk4-scaler.sh &
-easyeffects --gapplication-service &
+# easyeffects --gapplication-service &
