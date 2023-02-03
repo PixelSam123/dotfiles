@@ -13,3 +13,6 @@ eww open bar
 feh --bg-fill "/home/sam/Pictures/mihu-italo-monument enlarge.png"
 
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
+
+# User XDG Autostart
+env GTK_THEME=Adwaita:dark GDK_SCALE=1 easyeffects --gapplication-service &
