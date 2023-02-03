@@ -10,12 +10,12 @@
 
 (defwidget barwidget []
            (centerbox :class "centerbox"
-                      (tags) "${wmstate.window_title}" (rightside)))
+                      (tags) (windowtitle) (rightside)))
 
 (defwidget tags []
            (box :class "tags"
                 :halign "start"
-                (for tag in '${wmstate.workspaces[0].tags}'
+                (for tag in "${wmstate.workspaces[0].tags}"
                      (button :class {tag.mine   ? "tag-mine"   :
                                      tag.urgent ? "tag-urgent" :
                                      tag.busy   ? "tag-busy"   :
@@ -23,19 +23,27 @@
                              :onclick 'leftwm-command "SendWorkspaceToTag 0 ${tag.index}"'
                              "${tag.name}"))))
 
+(defwidget windowtitle []
+           (label :limit-width 128
+                  :text "${wmstate.window_title}"))
+
 (defwidget rightside []
            (box :class "rightside"
                 :halign "end"
-                "VOL ${volume}" time))
+                "${memory[0].type} ${memory[0].used}M" "Vol ${volume}" time))
 
 ; Reusables or "magical" variables/widgets
+(defpoll memory
+         :interval "2s"
+         "free -m | jc --free")
+
 (defpoll volume
-         :interval "0.1s"
+         :interval "0.2s"
          "pactl get-sink-volume 0 | grep -Po \\\\d+% | head -n 1")
 
 (defpoll time
          :interval "60s"
-         'date +%H:%M')
+         "date +%a\\ %H:%M")
 
 (deflisten wmstate
            :initial '{"window_title":"WM-not-loaded","workspaces":[{"layout":"","tags":[{"name":"1","index":0,"mine":false,"urgent":false,"busy":false}]}]}'
