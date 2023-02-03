@@ -24,22 +24,26 @@
                              "${tag.name}"))))
 
 (defwidget windowtitle []
-           (label :limit-width 128
+           (label :limit-width 100
                   :text "${wmstate.window_title}"))
 
 (defwidget rightside []
            (box :class "rightside"
                 :halign "end"
-                "${memory[0].type} ${memory[0].used}M" "Vol ${volume}" time))
+                "${memory[0].type} ${memory[0].used}M" "CPU ${cputemp}°C" "Vol ${volume}" time))
 
 ; Reusables or "magical" variables/widgets
 (defpoll memory
          :interval "2s"
          "free -m | jc --free")
 
+(defpoll cputemp
+         :interval "2s"
+         'sensors coretemp-isa-0000 | grep -i package | grep -Po "\\d{2,}" | head -n 1')
+
 (defpoll volume
          :interval "0.2s"
-         "pactl get-sink-volume 0 | grep -Po \\\\d+% | head -n 1")
+         'pactl get-sink-volume 0 | grep -Po "\\d+%" | head -n 1')
 
 (defpoll time
          :interval "60s"
