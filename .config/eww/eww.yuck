@@ -41,12 +41,11 @@
          :interval "2s"
          'sensors coretemp-isa-0000 | grep -i package | grep -Po "\\d{2,}" | head -n 1')
 
-(defpoll volume
-         :interval "0.2s"
-         'pactl get-sink-volume 0 | grep -Po "\\d+%" | head -n 1')
+(deflisten volume
+           "scripts/getvol.sh")
 
 (defpoll time
-         :interval "60s"
+         :interval "30s"
          "date +%a\\ %H:%M")
 
 (deflisten wmstate
