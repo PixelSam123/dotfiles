@@ -9,12 +9,14 @@ Guide for transferring this config over to XFCE (LightDM).
 Replace `.Xresources` with the contents below.
 
 ```
-Xft.antialias: 1
-Xft.hintstyle: hintfull
-Xft.rgba: rgb
-Xft.dpi: 192
-Xcursor.theme: Qogir
-Xcursor.size: 48
+Xft.antialias:      1
+Xft.hinting:        1
+Xft.hintstyle:      hintmedium
+Xft.rgba:           rgb
+Xft.dpi:            192
+Xcursor.theme:      Qogir
+Xcursor.size:       48
+Xcursor.theme_core: 1
 ```
 
 2. Add `.xprofile` file
