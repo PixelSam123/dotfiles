@@ -30,7 +30,7 @@
 (defwidget rightside []
            (box :class "rightside"
                 :halign "end"
-                "${memory[0].type} ${memory[0].used}M" "CPU ${cputemp}°C" "Vol ${volume}" time))
+                "󰍛 ${memory[0].used}M" "󰠠 ${cputemp}°C" "󰓃 ${volume}" "󰥔 ${time}"))
 
 ; Reusables or "magical" variables/widgets
 (defpoll memory
@@ -46,7 +46,7 @@
 
 (defpoll time
          :interval "30s"
-         "date +%a\\ %H:%M")
+         "date +%H:%M")
 
 (deflisten wmstate
            :initial '{"window_title":"WM-not-loaded","workspaces":[{"layout":"","tags":[{"name":"1","index":0,"mine":false,"urgent":false,"busy":false}]}]}'
