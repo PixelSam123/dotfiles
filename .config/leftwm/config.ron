@@ -26,6 +26,7 @@
     layouts: [
         MainAndVertStack,
         MainAndHorizontalStack,
+        Monocle,
     ],
     layout_mode: Tag,
     insert_behavior: Bottom,
