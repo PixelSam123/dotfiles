@@ -24,13 +24,19 @@
                              "${tag.name}"))))
 
 (defwidget windowtitle []
-           (label :limit-width 100
+           (label :limit-width 80
                   :text "${wmstate.window_title}"))
 
 (defwidget rightside []
            (box :class "rightside"
                 :halign "end"
-                "󰍛 ${memory[0].used}M" "󰠠 ${cputemp}°C" "󰓃 ${volume}" "󰥔 ${time}"))
+                (label :limit-width 6
+                       :show-truncated false
+                       :text "󱂬 ${wmstate.workspaces[0].layout}")
+                "󰍛 ${memory[0].used}M"
+                "󰠠 ${cputemp}°C"
+                "󰓃 ${volume}"
+                "󰥔 ${time}"))
 
 ; Reusables or "magical" variables/widgets
 (defpoll memory
@@ -45,7 +51,7 @@
            "scripts/getvol.sh")
 
 (defpoll time
-         :interval "30s"
+         :interval "10s"
          "date +%H:%M")
 
 (deflisten wmstate
