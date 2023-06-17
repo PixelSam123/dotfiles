@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	konsole
+	alacritty
 
 # program launcher
 super + space
@@ -30,7 +30,7 @@ Print
 
 # push to talk muter
 {_,@}button9
-	pactl set-sink-mute 0 {1,0}
+	/home/sam/.config/sxhkd/scripts/ptt-{_,de}activate.sh
 
 #
 # bspwm hotkeys

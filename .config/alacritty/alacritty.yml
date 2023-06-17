@@ -1,0 +1,17 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+
+shell:
+  program: /bin/bash
+  args:
+    - -lc
+    - zellij attach --index 0 || zellij
+
+font:
+  normal:
+    family: Iosevka Nerd Font
+    style: Medium
+  size: 12
+
+window:
+  opacity: 0.94
