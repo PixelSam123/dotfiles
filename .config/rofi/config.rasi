@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,run,combi";
-	font: "Iosevka Nerd Font 11";
+	font: "Iosevka SS17 Medium 11";
 	combi-modi: "window,drun";
 	show-icons: true;
 	dpi: 0;
@@ -161,7 +161,8 @@ configuration {
 
 window {
 	background-color: rgba ( 24, 24, 37, 0.94 );
-	width: 1500px;
+	width: 1000px;
+	border: 2px;
 }
 
 element-icon {
