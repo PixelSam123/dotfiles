@@ -59,6 +59,8 @@ super + g
 # togglesplit equivalent from Hyprland
 super + o
 	bspc node @parent -R 90
+super + shift + o
+	bspc node @parent -R -90
 
 #
 # state/flags
