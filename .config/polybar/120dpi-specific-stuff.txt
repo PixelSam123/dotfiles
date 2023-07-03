@@ -1,0 +1,4 @@
+height       = 22pt
+dpi          = 120
+tray-maxsize = 24
+hwmon-path   = use hwmon3
