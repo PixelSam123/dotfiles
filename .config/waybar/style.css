@@ -101,7 +101,7 @@
 }
 
 #tray {
-    /* No styles */
+    background-color: @base;
 }
 
 #window {
