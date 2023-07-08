@@ -44,9 +44,9 @@
 #waybar {
     background: @base;
     color: @text;
-    font-family: "JetBrainsMonoNL Nerd Font", monospace;
+    font-family: "Iosevka SS17", "Iosevka Nerd Font", monospace;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Each module */
