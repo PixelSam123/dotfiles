@@ -2,10 +2,6 @@
 # ~/.bash_profile
 #
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-# My settings
-
 # Only on bspwm
 if [ $DESKTOP_SESSION = bspwm ]; then
 	export _JAVA_AWT_WM_NONREPARENTING=1
@@ -18,3 +14,7 @@ if [ $DESKTOP_SESSION = bspwm ]; then
 fi
 
 export PATH=$PATH:~/.local/bin
+
+# Source bashrc
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
