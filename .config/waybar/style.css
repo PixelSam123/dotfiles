@@ -1,35 +1,8 @@
 @import "mocha.css";
 
-/* -----------------------------------------------------------------------------
- * Keyframes
- * -------------------------------------------------------------------------- */
-
-@keyframes blink-warning {
-    70% {
-        color: white;
-    }
-
-    to {
-        color: white;
-        background-color: orange;
-    }
-}
-
-@keyframes blink-critical {
-    70% {
-      color: white;
-    }
-
-    to {
-        color: white;
-        background-color: red;
-    }
-}
-
-
-/* -----------------------------------------------------------------------------
+/*
  * Base styles
- * -------------------------------------------------------------------------- */
+ */
 
 /* Reset all styles */
 * {
@@ -44,24 +17,24 @@
 #waybar {
     background: @base;
     color: @text;
-    font-family: "Iosevka SS17", "Iosevka Nerd Font", monospace;
+    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
     font-weight: 500;
     font-size: 20px;
 }
 
 /* Each module */
-#battery,
 #clock,
 #cpu,
 #custom-keyboard-layout,
 #memory,
-#mode,
 #network,
 #pulseaudio,
 #temperature,
 #tray {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: @subtext1;
     background: @surface0;
 }
@@ -71,32 +44,8 @@
  * Module styles
  * -------------------------------------------------------------------------- */
 
-#battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#battery.warning {
-    color: orange;
-}
-
-#battery.critical {
-    color: red;
-}
-
-#battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
-}
-
-#battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
 #clock {
-    font-weight: bold;
+    margin-right: 6px;
 }
 
 #cpu {
@@ -112,9 +61,6 @@
 }
 
 #memory {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #memory.warning {
@@ -123,15 +69,6 @@
 
 #memory.critical {
     color: red;
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
-#mode {
-    background: #64727D;
-    border-top: 3px solid white;
-    /* To compensate for the top border and still have vertical centering */
-    padding-bottom: 3px;
 }
 
 #network {
@@ -159,7 +96,8 @@
 }
 
 #temperature.critical {
-    color: red;
+    background: @red;
+    color: @text;
 }
 
 #tray {
@@ -167,25 +105,30 @@
 }
 
 #window {
-    font-weight: bold;
+
+}
+
+#workspaces {
+    background: @surface0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    margin-right: 20px;
 }
 
 #workspaces button {
-    border-top: 3px solid transparent;
     /* To compensate for the top border and still have vertical centering */
-    padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    color: @subtext1;
+    color: @overlay0;
 }
 
 #workspaces button.active {
-    border-color: @sapphire;
-    color: white;
-    background-color: @surface0;
+    color: @base;
+    background-color: @peach;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    color: @base;
+    background-color: @red;
 }

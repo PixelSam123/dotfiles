@@ -1,8 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["wlr/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "temperature", "network", "clock", "tray"],
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["network", "pulseaudio", "memory", "temperature", "clock", "tray"],
     "wlr/workspaces": {
         "on-click": "activate"
     },
@@ -11,24 +11,30 @@
         "separate-outputs": true
     },
     "pulseaudio": {
-        "format": "VOL {volume}%",
-        "format-muted": "VOL muted"
-    },
-    "temperature": {
-        "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
-        "interval": 1,
-        "format": "CPU {temperatureC}°C"
+        "format": "<span foreground='#1E1E2E' background='#FAB387'> 󰖀 </span> {volume}% ",
+        "format-muted": "<span foreground='#1E1E2E' background='#74C7EC'> 󰸈 </span> OFF ",
+        "on-click": "pactl set-sink-mute 0 toggle"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%)",
-        "interval": 30
+        "format-wifi": "<span background='#45475A'>  </span> {bandwidthDownBytes} <span background='#45475A'>  </span> {bandwidthUpBytes} <span foreground='#1E1E2E' background='#FAB387'> {ifname} </span> {essid} ",
+        "interval": 2
+    },
+    "memory": {
+        "format": "<span foreground='#1E1E2E' background='#FAB387'> 󰍛 </span> {percentage}% ",
+        "interval": 2
+    },
+    "temperature": {
+        "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {temperatureC}°C ",
+        "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+        "interval": 1,
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%H:%M} ",
+        "format-alt": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%a, %d. %b %H:%M} ",
         "interval": 30
     },
     "tray": {
-        "icon-size": 16,
-        "spacing": 8
+        "icon-size": 24,
+        "spacing": 16
     }
 }
