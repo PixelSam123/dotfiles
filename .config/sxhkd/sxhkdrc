@@ -96,7 +96,7 @@ super + bracket{left,right}
 
 # send to the next/previous desktop in the current monitor
 super + shift + bracket{left,right}
-	bspc node -d {prev,next}.local
+	bspc node -d {prev,next}.local --follow
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -104,7 +104,7 @@ super + {grave,Tab}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} '^{1-9,10}' {_,--follow}
 
 #
 # preselect
