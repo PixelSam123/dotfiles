@@ -102,9 +102,13 @@ super + shift + bracket{left,right}
 super + {grave,Tab}
 	bspc {node,desktop} -f last
 
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}' {_,--follow}
+# focus the given desktop
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+
+# send to the given desktop
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}' --follow
 
 #
 # preselect
