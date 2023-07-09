@@ -23,40 +23,27 @@
 
 /* Each module */
 #clock,
-#cpu,
 #custom-keyboard-layout,
 #memory,
 #network,
 #pulseaudio,
 #temperature,
 #tray {
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
     color: @subtext1;
     background: @surface0;
 }
 
 
-/* -----------------------------------------------------------------------------
+/*
  * Module styles
- * -------------------------------------------------------------------------- */
+ */
 
 #clock {
-    margin-right: 6px;
-}
-
-#cpu {
-  /* No styles */
-}
-
-#cpu.warning {
-    color: orange;
-}
-
-#cpu.critical {
-    color: red;
+    margin-right: 4px;
 }
 
 #memory {
@@ -71,7 +58,6 @@
 }
 
 #network {
-    /* No styles */
 }
 
 #network.disconnected {
@@ -79,19 +65,12 @@
 }
 
 #pulseaudio {
-    /* No styles */
 }
 
 #pulseaudio.muted {
-    /* No styles */
-}
-
-#custom-spotify {
-    color: rgb(102, 220, 105);
 }
 
 #temperature {
-    /* No styles */
 }
 
 #temperature.critical {
@@ -104,19 +83,17 @@
 }
 
 #window {
-
 }
 
 #workspaces {
     background: @surface0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 6px;
-    margin-right: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 16px;
 }
 
 #workspaces button {
-    /* To compensate for the top border and still have vertical centering */
     padding-left: 10px;
     padding-right: 10px;
     color: @overlay0;
