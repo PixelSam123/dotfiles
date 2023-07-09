@@ -18,7 +18,6 @@
     background: @base;
     color: @text;
     font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
-    font-weight: 500;
     font-size: 20px;
 }
 
