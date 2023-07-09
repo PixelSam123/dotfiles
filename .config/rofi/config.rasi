@@ -3,7 +3,7 @@ configuration {
 	font: "Iosevka SS17 Medium 11";
 	combi-modi: "window,drun";
 	show-icons: true;
-	dpi: 0;
+	dpi: 168;
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -161,10 +161,10 @@ configuration {
 
 window {
 	background-color: rgba ( 24, 24, 37, 0.94 );
-	width: 1000px;
+	width: 1200px;
 	border: 2px;
 }
 
 element-icon {
-	size: 24px;
+	size: 32px;
 }
