@@ -30,7 +30,7 @@ Print
 
 # push to talk muter
 {_,@}button9
-	/home/sam/.config/sxhkd/scripts/ptt-{_,de}activate.sh
+	/home/sam/Documents/scripts/ptt-{_,de}activate.sh
 
 #
 # bspwm hotkeys
