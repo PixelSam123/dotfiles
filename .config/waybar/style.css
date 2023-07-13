@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+tooltip {
+    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
+}
+
 /* The whole bar */
 #waybar {
     background: @base;
