@@ -90,7 +90,7 @@ tooltip {
 }
 
 #workspaces {
-    background: @surface0;
+    background: @surface1;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-left: 4px;
@@ -100,7 +100,7 @@ tooltip {
 #workspaces button {
     padding-left: 10px;
     padding-right: 10px;
-    color: @overlay0;
+    color: @text;
 }
 
 #workspaces button.active {
