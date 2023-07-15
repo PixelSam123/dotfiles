@@ -79,7 +79,7 @@ tooltip {
 
 #temperature.critical {
     background: @red;
-    color: @text;
+    color: @base;
 }
 
 #tray {
