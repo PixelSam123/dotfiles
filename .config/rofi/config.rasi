@@ -167,7 +167,7 @@ window {
 
 element-icon {
 	padding: 4px;
-	size: 36px;
+	size: 32px;
 }
 
 element-text {
