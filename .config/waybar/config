@@ -1,10 +1,9 @@
 {
     "layer": "top",
-    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": [],
     "modules-right": ["network", "pulseaudio", "memory", "temperature", "clock", "tray"],
-    "wlr/workspaces": {
-        "on-click": "activate"
+    "hyprland/workspaces": {
     },
     "hyprland/window": {
         "format": "{}",
@@ -25,7 +24,7 @@
     },
     "temperature": {
         "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {temperatureC}°C ",
-        "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
         "interval": 1,
     },
     "clock": {
