@@ -22,7 +22,7 @@ tooltip {
     background: @base;
     color: @text;
     font-family: "Iosevka SS17 Medium", "Iosevka Nerd Font Mono", monospace;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 /* Each module */
