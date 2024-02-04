@@ -14,24 +14,26 @@
 }
 
 tooltip {
-    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
+    font-family: "Iosevka SS17 Medium", "Iosevka Nerd Font Mono", monospace;
 }
 
 /* The whole bar */
 #waybar {
     background: @base;
     color: @text;
-    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
-    font-size: 20px;
+    font-family: "Iosevka SS17 Medium", "Iosevka Nerd Font Mono", monospace;
+    font-size: 22px;
 }
 
 /* Each module */
-#clock,
 #custom-keyboard-layout,
-#memory,
 #network,
+#backlight,
+#battery,
 #pulseaudio,
+#memory,
 #temperature,
+#clock,
 #tray {
     margin-top: 4px;
     margin-bottom: 4px;
