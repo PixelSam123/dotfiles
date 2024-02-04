@@ -2,11 +2,10 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": [],
-    "modules-right": ["network", "pulseaudio", "memory", "temperature", "clock", "tray"],
+    "modules-right": ["network", "backlight", "battery", "pulseaudio", "memory", "temperature", "clock", "tray"],
     "hyprland/workspaces": {
     },
     "hyprland/window": {
-        "format": "{}",
         "separate-outputs": true
     },
     "pulseaudio": {
@@ -17,6 +16,13 @@
     "network": {
         "format-wifi": "<span background='#45475A'>  </span> {bandwidthDownBytes} <span background='#45475A'>  </span> {bandwidthUpBytes} <span foreground='#1E1E2E' background='#FAB387'> {ifname} </span> {essid} ",
         "interval": 2
+    },
+    "backlight": {
+    	"format": "<span foreground='#1E1E2E' background='#FAB387'> 󰖨 </span> {percent} "
+    },
+    "battery": {
+	"format": "<span foreground='#1E1E2E' background='#FAB387'> 󰁹 </span> {capacity}% ",
+	"interval": 10
     },
     "memory": {
         "format": "<span foreground='#1E1E2E' background='#FAB387'> 󰍛 </span> {percentage}% ",
@@ -30,7 +36,7 @@
     "clock": {
         "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%H:%M} ",
         "format-alt": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%a, %d. %b %H:%M} ",
-        "interval": 30
+        "interval": 10
     },
     "tray": {
         "icon-size": 24,
