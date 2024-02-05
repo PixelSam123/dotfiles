@@ -1,0 +1,9 @@
+[Unit]
+Description=Start local filter chain
+
+[Service]
+Type=oneshot
+ExecStart=pipewire -c filter-chain.conf
+
+[Install]
+WantedBy=default.target
