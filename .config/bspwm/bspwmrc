@@ -1,6 +1,7 @@
 #!/usr/bin/sh
 
 /usr/lib/polkit-kde-authentication-agent-1 &
+/usr/lib/pam_kwallet_init &
 # blueman-applet &
 dunst &
 picom &
@@ -14,7 +15,7 @@ killall sxhkd; sxhkd &
 # easyeffects --gapplication-service &
 openrgb --profile "Catppuccin Peach" &
 
-feh --bg-fill "/home/sam/Pictures/BTR minimalist wallpapers/kita_ikuyo_minimalist_catppuccin.png"
+feh --bg-fill "/home/sam/Pictures/novitalemmon hu tao cropped v2.png"
 xsetroot -cursor_name left_ptr
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
