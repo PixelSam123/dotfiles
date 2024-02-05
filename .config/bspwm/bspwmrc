@@ -2,6 +2,7 @@
 
 /usr/lib/polkit-kde-authentication-agent-1 &
 /usr/lib/pam_kwallet_init &
+balooctl enable &
 # blueman-applet &
 dunst &
 picom &
