@@ -14,15 +14,15 @@
 }
 
 tooltip {
-    font-family: "Iosevka SS17 Medium", "Iosevka Nerd Font Mono", monospace;
+    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
 }
 
 /* The whole bar */
 #waybar {
     background: @base;
     color: @text;
-    font-family: "Iosevka SS17 Medium", "Iosevka Nerd Font Mono", monospace;
-    font-size: 23px;
+    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
+    font-size: 24px;
 }
 
 /* Each module */
