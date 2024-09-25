@@ -18,6 +18,7 @@ openrgb --profile "Catppuccin Peach" &
 
 feh --bg-fill "/home/sam/Pictures/novitalemmon hu tao cropped v2.png"
 xsetroot -cursor_name left_ptr
+setxkbmap -option caps:escape
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
