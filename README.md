@@ -23,6 +23,12 @@ You need to Reset profile every time you make changes to your KDE color scheme t
 
 Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still applied correctly.
 
+### Potentially now unneeded environment variables
+
+```
+QT_FONT_DPI
+```
+
 ## Wayland notes
 
 For Discord, use the `discord-electron` by `SunRed` AUR package so screenshare works
