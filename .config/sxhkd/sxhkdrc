@@ -20,9 +20,9 @@ super + Escape
 
 # audio volume and mute
 XF86Audio{Raise,Lower}Volume
-	pactl set-sink-volume 0 {+,-}5%
+	amixer -q sset Master 5%{+,-}
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	amixer -q sset Master toggle
 
 # screenshot
 Print
