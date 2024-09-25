@@ -23,6 +23,10 @@ You need to Reset profile every time you make changes to your KDE color scheme t
 
 Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still applied correctly.
 
+### Firefox does not respect my Dolphin QT6CT settings when opening downloaded file!
+
+Go to about:config, change `widget.use-xdg-desktop-portal.open-uri` from `2` to `1`.
+
 ### Potentially now unneeded environment variables
 
 ```
