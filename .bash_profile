@@ -12,6 +12,7 @@ if [ $DESKTOP_SESSION = bspwm ]; then
 	export QT_AUTO_SCREEN_SCALE_FACTOR=0
 	export QT_SCALE_FACTOR=2
 	export QT_FONT_DPI=96
+	export XDG_MENU_PREFIX=plasma-
 fi
 
 export PATH=$PATH:~/.local/bin
