@@ -17,8 +17,8 @@ GreeterEnvironment=QT_SCREEN_SCALE_FACTORS="DVI-I-0=1.25;DVI-I-1=1.25;HDMI-0=1.2
 
 ### Dark colors and custom accent color for Breeze QT6 doesn't work!
 
-Open `qt6ct`, create a new custom color scheme, edit it, then simply hit Reset palette.  
-A new color scheme with your correct color choices will magically be made... somehow.  
+Open `qt6ct`, create a new custom color scheme, edit it, then simply hit Reset palette.
+A new color scheme with your correct color choices will magically be made... somehow.
 You need to Reset profile every time you make changes to your KDE color scheme though, so the values are synced.
 
 Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still applied correctly.
@@ -26,6 +26,10 @@ Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still appl
 ### Firefox does not respect my Dolphin QT6CT settings when opening downloaded file!
 
 Go to about:config, change `widget.use-xdg-desktop-portal.open-uri` from `2` to `1`.
+
+### Prism Launcher does not open folders correctly!
+
+Remove `XDG_CURRENT_DESKTOP=KDE` from `.bash_profile`
 
 ### Potentially now unneeded environment variables
 
