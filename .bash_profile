@@ -13,6 +13,7 @@ if [ $DESKTOP_SESSION = bspwm ]; then
 	export QT_SCALE_FACTOR=2
 	export QT_FONT_DPI=96
 	export XDG_CONFIG_DIRS=/home/sam/.config/kdedefaults:/etc/xdg
+	export XDG_CURRENT_DESKTOP=KDE
 	export XDG_MENU_PREFIX=plasma-
 fi
 
