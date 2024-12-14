@@ -31,6 +31,10 @@ Go to about:config, change `widget.use-xdg-desktop-portal.open-uri` from `2` to 
 
 Remove `XDG_CURRENT_DESKTOP=KDE` from `.bash_profile`
 
+### Dolphin themes don't load!
+
+See [https://github.com/prasanthrangan/hyprdots/pull/1999]
+
 ### Potentially now unneeded environment variables
 
 ```
