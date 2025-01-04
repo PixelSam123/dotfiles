@@ -1,0 +1,6 @@
+theme       = catppuccin-mocha
+font-family = MonaspiceNe Nerd Font
+font-size   = 16
+
+background-opacity     = 0.94
+background-blur-radius = 24
