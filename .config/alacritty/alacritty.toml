@@ -8,6 +8,9 @@ size = 12
 family = "Iosevka Nerd Font"
 style = "Medium"
 
+[cursor.style]
+shape = "Beam"
+
 [terminal.shell]
 args = ["-lc", "zellij attach --index 0 || zellij"]
 program = "/bin/bash"
