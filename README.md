@@ -1,6 +1,7 @@
 # dotfiles
 
-My Linux xorg dotfiles/configs. `dotfiles-xorg` is being merged with `dotfiles-wayland`!
+My Linux xorg dotfiles/configs. `dotfiles-xorg` is being merged with `dotfiles-wayland`!  
+WARNING: Do not clone directly to your home directory, this repo is not yet set up for that kind of usage!
 
 ## Fix KDE Plasma 6 migration quirks
 
