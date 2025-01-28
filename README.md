@@ -55,7 +55,7 @@ BSPC Focused Border Color: `#EBCB8B`
 
 ### rofi
 
-Foreground & Separator Color: `#e5e9f0`
+Foreground & Separator Color: `#d8dee9`
 Selected Normal Foreground: `#eceff4`
 Selected Normal Background & Selected Active Background: `#434c5e`
 Active Foreground: `#88c0d0`
@@ -66,7 +66,7 @@ Window Background Color: `rgba(46, 52, 64, 0.94)`
 ### dunst
 
 Background: `#2e3440`
-Foreground: `#e5e9f0`
+Foreground: `#d8dee9`
 Normal Frame Color: `#88c0d0`
 Critical Frame Color: `#bf616a`
 
@@ -75,7 +75,7 @@ Critical Frame Color: `#bf616a`
 Background: `#2e3440`
 Background Alt: `#3b4252`
 Background Alt Brighter: `#434c5e`
-Foreground: `#e5e9f0`
+Foreground: `#d8dee9`
 Primary: `#ebcb8b`
 Secondary: `#88c0d0`
 Alert: `#bf616a`
