@@ -45,3 +45,38 @@ QT_FONT_DPI
 ## Wayland notes
 
 For Discord, use the `discord-electron` by `SunRed` AUR package so screenshare works
+
+## Self notes for Catppuccin -> Nord migration
+
+### BSPWM
+
+BSPC Normal Border Color: `#3B4252`
+BSPC Focused Border Color: `#EBCB8B`
+
+### rofi
+
+Foreground & Separator Color: `#e5e9f0`
+Selected Normal Foreground: `#eceff4`
+Selected Normal Background & Selected Active Background: `#434c5e`
+Active Foreground: `#88c0d0`
+Active Background: `rgb(46, 52, 64)`
+Selected Active Foreground: `#ebcb8b`
+Window Background Color: `rgba(46, 52, 64, 0.94)`
+
+### dunst
+
+Background: `#2e3440`
+Foreground: `#e5e9f0`
+Normal Frame Color: `#88c0d0`
+Critical Frame Color: `#bf616a`
+
+### Polybar
+
+Background: `#2e3440`
+Background Alt: `#3b4252`
+Background Alt Brighter: `#434c5e`
+Foreground: `#e5e9f0`
+Primary: `#ebcb8b`
+Secondary: `#88c0d0`
+Alert: `#bf616a`
+Disabled: `#4c566a`
