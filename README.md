@@ -79,4 +79,4 @@ Foreground: `#d8dee9`
 Primary: `#ebcb8b`
 Secondary: `#88c0d0`
 Alert: `#bf616a`
-Disabled: `#4c566a`
+Disabled: `#60728a`
