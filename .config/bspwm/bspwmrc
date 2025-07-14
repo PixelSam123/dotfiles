@@ -11,6 +11,8 @@ killall sxhkd; sxhkd &
 
 # System XDG Autostart
 # abrt-applet --gapplication-service &
+echo "2908" | sudo -S nvidia-smi -pl 100 &
+echo "2908" | sudo -S nvidia-settings -a "GPUGraphicsClockOffsetAllPerformanceLevels=120" &
 
 # User XDG Autostart
 # easyeffects --gapplication-service &
