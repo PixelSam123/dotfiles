@@ -16,7 +16,7 @@ args = ["-lc", "zellij attach --index 0 || zellij"]
 program = "/bin/bash"
 
 [window]
-opacity = 0.94
+opacity = 0.95
 
 [general]
 import = ["/home/sam/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
