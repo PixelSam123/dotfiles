@@ -1,5 +1,7 @@
 # dotfiles
 
+![dotfiles banner](<https://raw.githubusercontent.com/PixelSam123/dotfiles/refs/heads/main/docs/dotfiles.webp>)
+
 My Linux xorg dotfiles/configs. `dotfiles-xorg` is being merged with `dotfiles-wayland`!  
 WARNING: Do not clone directly to your home directory, this repo is not yet set up for that kind of usage!
 
