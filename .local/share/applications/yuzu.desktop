@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yuzu
+Type=Application
+Terminal=false
+Icon=yuzu
+Exec=yuzu-mainline.AppImage %u
+GenericName=Nintendo Switch Emulator
+Categories=Game;Emulator;
+Keywords=Nintendo;

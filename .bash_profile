@@ -19,6 +19,10 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
+# Application fixes
+
+export PATH="/usr/lib/qt6/bin:$PATH"
+
 # Source bashrc
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
