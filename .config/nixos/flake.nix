@@ -12,6 +12,16 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./hardware-configurations/virt-manager.nix
+          ./per-instance/virt-manager.nix
+          ./configuration.nix
+        ];
+      };
+      sam-nixos-vmware = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hardware-configurations/vmware.nix
+          ./per-instance/vmware.nix
           ./configuration.nix
         ];
       };
