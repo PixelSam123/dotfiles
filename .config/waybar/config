@@ -9,33 +9,33 @@
         "separate-outputs": true
     },
     "pulseaudio": {
-        "format": "<span foreground='#1E1E2E' background='#FAB387'> 󰖀 </span> {volume}% ",
-        "format-muted": "<span foreground='#1E1E2E' background='#74C7EC'> 󰸈 </span> OFF ",
+        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰖀 </span> {volume}% </span>",
+        "format-muted": "<span line-height='1.15'><span foreground='#2e3440' background='#b48ead'> 󰸈 </span> OFF </span>",
         "on-click": "pactl set-sink-mute 0 toggle"
     },
     "network": {
-        "format-wifi": "<span background='#45475A'>  </span> {bandwidthDownBytes} <span background='#45475A'>  </span> {bandwidthUpBytes} <span foreground='#1E1E2E' background='#FAB387'> {ifname} </span> {essid} ",
+        "format-wifi": "<span line-height='1.15'><span background='#434c5e'>  </span> {bandwidthDownBytes} <span background='#434c5e'>  </span> {bandwidthUpBytes} <span foreground='#2e3440' background='#88c0d0'> {ifname} </span> {essid} </span>",
         "interval": 2
     },
     "backlight": {
-    	"format": "<span foreground='#1E1E2E' background='#FAB387'> 󰖨 </span> {percent} "
+        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰖨 </span> {percent} </span>"
     },
     "battery": {
-	"format": "<span foreground='#1E1E2E' background='#FAB387'> 󰁹 </span> {capacity}% ",
+	"format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰁹 </span> {capacity}% </span>",
 	"interval": 10
     },
     "memory": {
-        "format": "<span foreground='#1E1E2E' background='#FAB387'> 󰍛 </span> {percentage}% ",
+        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰍛 </span> {percentage}% </span>",
         "interval": 2
     },
     "temperature": {
-        "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {temperatureC}°C ",
-        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {temperatureC}°C </span>",
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
         "interval": 1,
     },
     "clock": {
-        "format": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%H:%M} ",
-        "format-alt": "<span foreground='#1E1E2E' background='#FAB387'>  </span> {:%a, %d. %b %H:%M} ",
+        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {:%H:%M} </span>",
+        "format-alt": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {:%a, %d. %b %H:%M} </span>",
         "interval": 10
     },
     "tray": {

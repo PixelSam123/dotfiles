@@ -1,5 +1,13 @@
 @import "mocha.css";
 
+@define-color base #2e3440;
+@define-color text #d8dee9;
+@define-color subtext1 #d8dee9;
+@define-color surface0 #3b4252;
+@define-color surface1 #434c5e;
+@define-color red #bf616a;
+@define-color peach #88c0d0;
+
 /*
  * Base styles
  */
@@ -21,8 +29,8 @@ tooltip {
 #waybar {
     background: @base;
     color: @text;
-    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
-    font-size: 24px;
+    font-family: "Iosevka SS09", "Iosevka Nerd Font Mono", monospace;
+    font-size: 20px;
 }
 
 /* Each module */
@@ -35,21 +43,20 @@ tooltip {
 #temperature,
 #clock,
 #tray {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
     color: @subtext1;
     background: @surface0;
 }
-
 
 /*
  * Module styles
  */
 
 #clock {
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 #memory {
@@ -93,16 +100,23 @@ tooltip {
 
 #workspaces {
     background: @surface1;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 8px;
-    margin-right: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    margin-right: 12px;
 }
 
 #workspaces button {
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 0.375em;
+    padding-right: 0.375em;
     color: @text;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    transition: unset;
 }
 
 #workspaces button.active {

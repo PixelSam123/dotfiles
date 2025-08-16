@@ -1,7 +1,7 @@
 [global]
 frame_color = "#88c0d0"
 separator_color = frame
-font = Iosevka SS09 12
+font = Iosevka SS09 15
 
 [urgency_low]
 background = "#2e3440"
