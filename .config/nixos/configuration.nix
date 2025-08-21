@@ -48,15 +48,20 @@
   # Enable bspwm (Automatically installs sxhkd)
   services.xserver.windowManager.bspwm.enable = true;
 
+  # Force kwallet run
+  security.pam.services.bspwm.kwallet = {
+    enable = true;
+    forceRun = true;
+  };
+
   # Setup profile env
   environment.extraInit = ''
     if [ $DESKTOP_SESSION = none+bspwm ]; then
       export _JAVA_AWT_WM_NONREPARENTING=1
-      export QT_QPA_PLATFORMTHEME=qt5ct
-      export QT_QUICK_CONTROLS_STYLE=org.kde.desktop
+      export QT_QPA_PLATFORMTHEME=KDE
+      #export QT_QUICK_CONTROLS_STYLE=org.kde.desktop
       export QT_AUTO_SCREEN_SCALE_FACTOR=0
       export QT_SCREEN_SCALE_FACTORS=1.75
-      export XDG_CONFIG_DIRS=/home/sam/.config/kdedefaults:/etc/xdg
       export XDG_MENU_PREFIX=plasma-
     fi
 
@@ -105,14 +110,18 @@
       kitty
       papirus-nord
       zed-editor
+      discord
 
+      kdePackages.knewstuff
+      kdePackages.ksvg
+      kdePackages.qtpositioning
       dunst
       feh
       flameshot
       picom
       polybarFull
-      qt6ct
       rofi
+      lxqt.lxqt-policykit
     ];
   };
 
@@ -141,7 +150,7 @@
   # Install zoxide.
   programs.zoxide = {
     enable = true;
-    enableBashIntegration = true;
+    flags = [ "--cmd cd" ];
   };
 
   # Install starship.
