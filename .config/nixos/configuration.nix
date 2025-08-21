@@ -95,7 +95,7 @@
       feh
       flameshot
       picom
-      polybar
+      polybar-full
       qt6ct
       rofi
     ];
