@@ -2,6 +2,19 @@
 {
   networking.hostName = "sam-nixos-b460"; # Define your hostname.
 
+  # Enable bluetooth
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+
+  # -- NVIDIA SETTINGS --
+
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
