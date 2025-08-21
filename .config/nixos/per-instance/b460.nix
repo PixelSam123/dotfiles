@@ -1,3 +1,4 @@
+{ config, lib, pkgs, ... }:
 {
   networking.hostName = "sam-nixos-b460"; # Define your hostname.
 
