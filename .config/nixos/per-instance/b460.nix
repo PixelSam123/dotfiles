@@ -13,6 +13,12 @@
     };
   };
 
+  # Use swap file
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16*1024;
+  } ];
+
   # Undervolt CPU
   services.undervolt = {
     enable = true;
