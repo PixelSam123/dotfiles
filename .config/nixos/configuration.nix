@@ -86,14 +86,16 @@
       gh
       prismlauncher
       gparted
+      eza
+      kitty
+      papirus-nord
 
       dunst
       feh
       flameshot
-      kitty
-      papirus-nord
       picom
       polybar
+      qt6ct
       rofi
     ];
   };
@@ -119,6 +121,15 @@
 
   # Install bat.
   programs.bat.enable = true;
+
+  # Install zoxide.
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+  };
+
+  # Install starship.
+  programs.starship.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
