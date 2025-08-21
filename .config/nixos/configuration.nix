@@ -48,6 +48,21 @@
   # Enable bspwm (Automatically installs sxhkd)
   services.xserver.windowManager.bspwm.enable = true;
 
+  # Setup profile env
+  environment.extraInit = ''
+    if [ $DESKTOP_SESSION = none+bspwm ]; then
+      export _JAVA_AWT_WM_NONREPARENTING=1
+      export QT_QPA_PLATFORMTHEME=qt5ct
+      export QT_QUICK_CONTROLS_STYLE=org.kde.desktop
+      export QT_AUTO_SCREEN_SCALE_FACTOR=0
+      export QT_SCREEN_SCALE_FACTORS=1.75
+      export XDG_CONFIG_DIRS=/home/sam/.config/kdedefaults:/etc/xdg
+      export XDG_MENU_PREFIX=plasma-
+    fi
+
+    export PATH=$PATH:~/.local/bin
+  '';
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -142,6 +157,7 @@
   #  wget
     duf
     bottom
+    xclip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
