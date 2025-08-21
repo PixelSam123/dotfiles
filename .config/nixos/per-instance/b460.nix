@@ -13,6 +13,12 @@
     };
   };
 
+  # Undervolt CPU
+  services.undervolt = {
+    enable = true;
+    coreOffset = -50;
+  };
+
   # -- NVIDIA SETTINGS --
 
   # Enable OpenGL
