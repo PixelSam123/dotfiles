@@ -45,6 +45,9 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
+  # Enable bspwm (Automatically installs sxhkd)
+  services.xserver.windowManager.bspwm.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -83,12 +86,23 @@
       gh
       prismlauncher
       gparted
+
+      dunst
+      feh
+      flameshot
+      kitty
+      papirus-nord
+      picom
+      polybar
+      rofi
     ];
   };
 
   # Install fonts
   fonts.packages = with pkgs; [
     inter
+    iosevka
+    nerd-fonts.iosevka
   ];
 
   # Install firefox.
@@ -102,6 +116,9 @@
 
   # Install git.
   programs.git.enable = true;
+
+  # Install bat.
+  programs.bat.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
