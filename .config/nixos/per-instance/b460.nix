@@ -22,7 +22,7 @@
   # Undervolt CPU
   services.undervolt = {
     enable = true;
-    coreOffset = -50;
+    coreOffset = -55;
   };
 
   # -- NVIDIA SETTINGS --
