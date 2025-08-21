@@ -89,6 +89,7 @@
       eza
       kitty
       papirus-nord
+      zed-editor
 
       dunst
       feh
@@ -140,6 +141,7 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
     duf
+    bottom
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
