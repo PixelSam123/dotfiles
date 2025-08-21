@@ -25,6 +25,15 @@
           ./configuration.nix
         ];
       };
+      sam-nixos-b460 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hardware-configurations/b460.nix
+          ./per-instance/b460.nix
+          ./configuration.nix
+        ];
+      };
     };
   };
 }
