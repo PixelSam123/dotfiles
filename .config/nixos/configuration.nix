@@ -86,6 +86,11 @@
     ];
   };
 
+  # Install fonts
+  fonts.packages = with pkgs; [
+    inter
+  ];
+
   # Install firefox.
   programs.firefox.enable = true;
 
