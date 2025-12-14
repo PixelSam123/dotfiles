@@ -15,7 +15,7 @@
     },
     "network": {
         "format-wifi": "<span line-height='1.1666'><span background='#434c5e'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {bandwidthDownBytes} <span background='#434c5e'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {bandwidthUpBytes} <span foreground='#2e3440' background='#88c0d0'> {ifname} </span> {essid} </span>",
-        "format-disconnected": "<span line-height='1.1666'><span foreground='#2e3440' background='#b48ead'> disconnected </span> {ifname}</span>",
+        "format-disconnected": "<span line-height='1.1666'><span foreground='#2e3440' background='#b48ead'> disconnected </span></span>",
         "interval": 1
     },
     "backlight": {
