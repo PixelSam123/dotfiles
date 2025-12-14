@@ -140,7 +140,6 @@ feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 ```ini
 [bar/example]
 dpi         = 120
-border-size = 6px
 
 font-0 = Iosevka Term SS09:size=12;4
 font-1 = Iosevka Nerd Font Mono:size=18;5
