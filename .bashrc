@@ -9,7 +9,7 @@ alias ls='eza --color=auto'
 alias ll='ls -la'
 alias grep='grep --color=auto'
 alias vi='nvim'
-alias ssh='env TERM=xterm-256color ssh'
+alias neofetch='fastfetch'
 
 eval "$(starship init bash)"
 eval "$(zoxide init --cmd cd bash)"

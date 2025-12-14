@@ -1,12 +1,10 @@
-@import "mocha.css";
-
 @define-color base #2e3440;
 @define-color text #d8dee9;
 @define-color subtext1 #d8dee9;
 @define-color surface0 #3b4252;
 @define-color surface1 #434c5e;
 @define-color red #bf616a;
-@define-color peach #88c0d0;
+@define-color primary #88c0d0;
 
 /*
  * Base styles
@@ -22,7 +20,7 @@
 }
 
 tooltip {
-    font-family: "Iosevka SS17", "Iosevka Nerd Font Mono", monospace;
+    font-family: "Iosevka SS09", "Iosevka Nerd Font Mono", monospace;
 }
 
 /* The whole bar */
@@ -30,7 +28,7 @@ tooltip {
     background: @base;
     color: @text;
     font-family: "Iosevka SS09", "Iosevka Nerd Font Mono", monospace;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 /* Each module */
@@ -43,10 +41,7 @@ tooltip {
 #temperature,
 #clock,
 #tray {
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin: 8px 0.5em;
     color: @subtext1;
     background: @surface0;
 }
@@ -56,7 +51,7 @@ tooltip {
  */
 
 #clock {
-    margin-right: 6px;
+    margin-right: 0.5em;
 }
 
 #memory {
@@ -93,6 +88,7 @@ tooltip {
 
 #tray {
     background-color: @base;
+    margin-right: 1em;
 }
 
 #window {
@@ -100,15 +96,15 @@ tooltip {
 
 #workspaces {
     background: @surface1;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-left: 6px;
-    margin-right: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 1em;
 }
 
 #workspaces button {
-    padding-left: 0.375em;
-    padding-right: 0.375em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     color: @text;
 }
 
@@ -121,7 +117,7 @@ tooltip {
 
 #workspaces button.active {
     color: @base;
-    background-color: @peach;
+    background-color: @primary;
 }
 
 #workspaces button.urgent {

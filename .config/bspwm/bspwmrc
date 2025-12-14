@@ -3,22 +3,22 @@
 /usr/lib/polkit-kde-authentication-agent-1 &
 /usr/lib/pam_kwallet_init &
 balooctl6 enable &
-# blueman-applet &
+nm-applet &
 dunst &
 picom &
 killall sxhkd; sxhkd &
-/home/sam/.config/polybar/launch.sh &
+~/.config/polybar/launch.sh &
 
 # System XDG Autostart
 # abrt-applet --gapplication-service &
-echo "2908" | sudo -S nvidia-smi -pl 100 &
-echo "2908" | sudo -S nvidia-settings -a "GPUGraphicsClockOffsetAllPerformanceLevels=120" &
+# echo "2908" | sudo -S nvidia-smi -pl 120 &
+# echo "2908" | sudo -S nvidia-settings -a "GPUGraphicsClockOffsetAllPerformanceLevels=180" &
 
 # User XDG Autostart
 # easyeffects --gapplication-service &
-openrgb --profile "Catppuccin Peach" &
+# openrgb --profile "Catppuccin Peach" &
 
-feh --bg-fill "/home/sam/Pictures/novitalemmon hu tao cropped v2.png"
+feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 xsetroot -cursor_name left_ptr
 setxkbmap -option caps:escape
 
@@ -26,7 +26,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 bspc config border_width         4
 bspc config window_gap           8
-bspc config top_padding          56 # 60 if using polybar/config-blocks
+bspc config top_padding          58
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -35,7 +35,6 @@ bspc config gapless_monocle      true
 bspc config normal_border_color  "#2E3440"
 bspc config focused_border_color "#88C0D0"
 
-bspc rule -a Gimp state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

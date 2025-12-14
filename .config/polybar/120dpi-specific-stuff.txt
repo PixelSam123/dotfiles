@@ -1,7 +1,0 @@
-dpi          = 120
-tray-maxsize = 24
-hwmon-path   = use hwmon3
-
-; For polybar/config-blocks
-font-0 = Iosevka SS17:size=12;4
-font-1 = Iosevka Nerd Font Mono:size=18;5

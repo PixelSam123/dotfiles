@@ -1,9 +1,0 @@
-[Unit]
-Description=Disable faulty ACPI interrupts from GPE6F
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash -c "echo mask > /sys/firmware/acpi/interrupts/gpe6F"
-
-[Install]
-WantedBy=multi-user.target

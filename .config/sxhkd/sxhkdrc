@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	kitty
+	ghostty
 
 # program launcher
 super + space
@@ -25,12 +25,14 @@ XF86AudioMute
 	amixer -q sset Master toggle
 
 # screenshot
-Print
+super + shift + s
 	flameshot gui
 
 # push to talk muter
-{_,@}button9
-	/home/sam/Documents/scripts/ptt-{_,de}activate.sh
+# {_,@}button9
+# 	 ~/scripts/ptt-{_,de}activate.sh
+button9
+	~/scripts/ptt-toggle.sh
 
 #
 # bspwm hotkeys

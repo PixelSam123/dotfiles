@@ -1,9 +1,10 @@
 configuration {
 	modi: "window,run,combi";
-	font: "Iosevka SS17 Medium 12";
+	font: "Iosevka SS09 12";
 	combi-modi: "window,drun";
 	show-icons: true;
-	dpi: 120;
+	icon-theme: "Papirus-Dark";
+	dpi: 168;
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -16,7 +17,6 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-/*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
@@ -149,25 +149,25 @@ configuration {
 @theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
 
 * {
-	foreground: rgb ( 205, 214, 244 );
-	separatorcolor: rgb ( 205, 214, 244 );
-	selected-normal-foreground: rgb ( 245, 224, 220 );
-	selected-normal-background: rgb ( 49, 50, 68 );
-	active-foreground: rgb ( 250, 179, 135 );
-	active-background: rgb ( 24, 24, 37 );
-	selected-active-foreground: rgb ( 249, 226, 175 );
-	selected-active-background: rgb ( 49, 50, 68 );
+	foreground: #d8dee9;
+	separatorcolor: #d8dee9;
+	selected-normal-foreground: #eceff4;
+	selected-normal-background: #434c5e;
+	active-foreground: #88c0d0;
+	active-background: rgb(46, 52, 64);
+	selected-active-foreground: #ebcb8b;
+	selected-active-background: #434c5e;
 }
 
 window {
-	background-color: rgba ( 24, 24, 37, 0.95 );
+	background-color: rgba(46, 52, 64, 0.95);
 	width: 1280px;
-	border: 2px;
+	border: 3px;
 }
 
 element-icon {
-	padding: 4px;
-	size: 32px;
+	padding: 8px;
+	size: 48px;
 }
 
 element-text {

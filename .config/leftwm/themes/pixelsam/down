@@ -2,11 +2,8 @@
 
 leftwm-command "UnloadTheme"
 
-killall xfsettingsd
-killall polkit-gnome-authentication-agent-1
-# killall blueman-applet
+killall polkit-kde-authentication-agent-1
+killall nm-applet
 killall dunst
 killall picom
-killall stalonetray
-eww kill
-killall easyeffects
+polybar-msg cmd quit

@@ -2,8 +2,45 @@
 
 ![dotfiles banner](<https://raw.githubusercontent.com/PixelSam123/dotfiles/refs/heads/master/docs/dotfiles.webp>)
 
-My Linux xorg dotfiles/configs. `dotfiles-xorg` is being merged with `dotfiles-wayland`!  
-WARNING: Do not clone directly to your home directory, this repo is not yet set up for that kind of usage!
+My Linux xorg dotfiles/configs. `dotfiles-xorg` is now merged with `dotfiles-wayland`!  
+This configuration is quite minimal as I prefer to do most of my stuff through apps, not the desktop experience.
+It is highly recommended to use these dotfiles on top of a KDE installation, it makes life much easier. Take a look at the `.config` folder to see what packages you need to install - since my config is pretty simple, they should be straightforward to check.
+
+This config uses HJKL instead of arrow keys for navigation, and is tested on a 4K display. Some values are in the `CONFIGURABLES.md` file if you want to use this config in a lower resolution.
+
+This config uses the Nord theme, though Catppuccin Mocha values are available in `CONFIGURABLES.md`
+
+## DE choices
+
+1. X11 - bspwm
+2. X11 - leftwm. I haven't used this in quite a while so the config might need revisions
+3. Wayland - Hyprland
+
+## Repo revamp!
+
+I've simplified my dotfiles to remove stuff I don't need and I moved resolution or theme-specific settings to `CONFIGURABLES.md` instead. You can directly clone my dotfiles to your home folder now, and for theme or resolution-specific adjustments, check that markdown file.
+
+## Push-to-talk script on and off sound
+
+Add your own `ptt-on.wav` and `ptt-off.wav` to your home folder.
+
+## System-specific tips
+
+### 1. Disable faulty ACPI interrupts
+
+Add a service under `/etc/systemd/system`.
+
+```toml
+[Unit]
+Description=Disable faulty ACPI interrupts from GPE6F
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "echo mask > /sys/firmware/acpi/interrupts/gpe6F"
+
+[Install]
+WantedBy=multi-user.target
+```
 
 ## Fix KDE Plasma 6 migration quirks
 
@@ -15,7 +52,7 @@ Customize DPI through `General.GreeterEnvironment` in `etc/sddm.conf.d/kde_setti
 [General]
 HaltCommand=/usr/bin/systemctl poweroff
 RebootCommand=/usr/bin/systemctl reboot
-GreeterEnvironment=QT_SCREEN_SCALE_FACTORS="DVI-I-0=1.25;DVI-I-1=1.25;HDMI-0=1.25;DP-0=1.25;DP-1=1.25;DVI-D-0=1.25;",QT_FONT_DPI=120
+GreeterEnvironment=QT_SCREEN_SCALE_FACTORS="1.25",QT_FONT_DPI=120
 ```
 
 ### Dark colors and custom accent color for Breeze QT6 doesn't work!
@@ -30,55 +67,10 @@ Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still appl
 
 Go to about:config, change `widget.use-xdg-desktop-portal.open-uri` from `2` to `1`.
 
-### Prism Launcher does not open folders correctly!
-
-Remove `XDG_CURRENT_DESKTOP=KDE` from `.bash_profile`
-
-### Dolphin themes don't load!
+### Theme doesn't apply to Dolphin!
 
 See [https://github.com/prasanthrangan/hyprdots/pull/1999]
 
-### Potentially now unneeded environment variables
+### Now unneeded environment variables
 
-```
-QT_FONT_DPI
-```
-
-## Wayland notes
-
-For Discord, use the `discord-electron` by `SunRed` AUR package so screenshare works
-
-## Self notes for Catppuccin -> Nord migration
-
-### BSPWM
-
-BSPC Normal Border Color: `#3B4252`
-BSPC Focused Border Color: `#EBCB8B`
-
-### rofi
-
-Foreground & Separator Color: `#d8dee9`
-Selected Normal Foreground: `#eceff4`
-Selected Normal Background & Selected Active Background: `#434c5e`
-Active Foreground: `#88c0d0`
-Active Background: `rgb(46, 52, 64)`
-Selected Active Foreground: `#ebcb8b`
-Window Background Color: `rgba(46, 52, 64, 0.94)`
-
-### dunst
-
-Background: `#2e3440`
-Foreground: `#d8dee9`
-Normal Frame Color: `#88c0d0`
-Critical Frame Color: `#bf616a`
-
-### Polybar
-
-Background: `#2e3440`
-Background Alt: `#3b4252`
-Background Alt Brighter: `#434c5e`
-Foreground: `#d8dee9`
-Primary: `#ebcb8b`
-Secondary: `#88c0d0`
-Alert: `#bf616a`
-Disabled: `#60728a`
+- `QT_FONT_DPI` - use `QT_SCREEN_SCALE_FACTORS` instead

@@ -2,17 +2,17 @@
 
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-xfsettingsd --sm-client-disable &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-# blueman-applet & # seems to be launched automatically by xfsettingsd?
+/usr/lib/polkit-kde-authentication-agent-1 &
+/usr/lib/pam_kwallet_init &
+balooctl6 enable &
+nm-applet &
 dunst &
 picom &
-stalonetray &
+~/.config/polybar/launch.sh &
 
-eww open bar
-feh --bg-fill "/home/sam/Pictures/mihu-italo-monument enlarge.png"
+feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 # User XDG Autostart
-env GTK_THEME=Adwaita:dark GDK_SCALE=1 easyeffects --gapplication-service &
+# openrgb --profile "Catppuccin Peach" &

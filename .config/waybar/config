@@ -9,37 +9,40 @@
         "separate-outputs": true
     },
     "pulseaudio": {
-        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰖀 </span> {volume}% </span>",
-        "format-muted": "<span line-height='1.15'><span foreground='#2e3440' background='#b48ead'> 󰸈 </span> OFF </span>",
+        "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'>󰖀</span> </span> {volume}% </span>",
+        "format-muted": "<span line-height='1.1666'><span foreground='#2e3440' background='#b48ead'> <span font='42px' line-height='0.7782' rise='-4222'>󰸈</span> </span> {volume}% </span>",
         "on-click": "pactl set-sink-mute 0 toggle"
     },
     "network": {
-        "format-wifi": "<span line-height='1.15'><span background='#434c5e'>  </span> {bandwidthDownBytes} <span background='#434c5e'>  </span> {bandwidthUpBytes} <span foreground='#2e3440' background='#88c0d0'> {ifname} </span> {essid} </span>",
-        "interval": 2
+        "format-wifi": "<span line-height='1.1666'><span background='#434c5e'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {bandwidthDownBytes} <span background='#434c5e'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {bandwidthUpBytes} <span foreground='#2e3440' background='#88c0d0'> {ifname} </span> {essid} </span>",
+        "format-disconnected": "<span line-height='1.1666'><span foreground='#2e3440' background='#b48ead'> disconnected </span> {ifname}</span>",
+        "interval": 1
     },
     "backlight": {
-        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰖨 </span> {percent} </span>"
+        "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'>󰖨</span> </span> {percent} </span>"
     },
     "battery": {
-	"format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰁹 </span> {capacity}% </span>",
-	"interval": 10
+      "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'>󰁹</span> </span> {capacity}% </span>",
+      "interval": 10
     },
     "memory": {
-        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'> 󰍛 </span> {percentage}% </span>",
-        "interval": 2
+        "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'>󰍛</span> </span> {percentage}% </span>",
+        "interval": 1
     },
     "temperature": {
-        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {temperatureC}°C </span>",
-        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-        "interval": 1,
+        "critical-threshold": 80,
+        "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {temperatureC}°C </span>",
+        "format-critical": "<span line-height='1.1666'><span foreground='#2e3440' background='#bf616a'> <span font='42px' line-height='0.7782' rise='-4222'>󰈸</span> </span> {temperatureC}°C </span>",
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "interval": 1
     },
     "clock": {
-        "format": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {:%H:%M} </span>",
-        "format-alt": "<span line-height='1.15'><span foreground='#2e3440' background='#88c0d0'>  </span> {:%a, %d. %b %H:%M} </span>",
+        "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {:%H:%M} </span>",
+        "format-alt": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {:%a, %d. %b %H:%M} </span>",
         "interval": 10
     },
     "tray": {
-        "icon-size": 24,
+        "icon-size": 32,
         "spacing": 8
     }
 }
