@@ -1,6 +1,6 @@
 # dotfiles
 
-![dotfiles banner](<https://raw.githubusercontent.com/PixelSam123/dotfiles/refs/heads/master/docs/dotfiles.webp>)
+![dotfiles banner](<https://raw.githubusercontent.com/PixelSam123/dotfiles/refs/heads/main/docs/dotfiles.webp>)
 
 My Linux xorg dotfiles/configs. `dotfiles-xorg` is now merged with `dotfiles-wayland`!  
 This configuration is quite minimal as I prefer to do most of my stuff through apps, not the desktop experience.
