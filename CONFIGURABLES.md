@@ -45,7 +45,21 @@ feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 
 ## `dunst`
 
-### 1. Catppuccin Mocha colors
+### 1. 1440p (120 DPI) sizes
+
+```toml
+[global]
+scale = 1
+font = Iosevka SS09 15
+
+min_icon_size = 64
+max_icon_size = 64
+frame_width   = 3
+width         = (256, 512)
+height        = (0,   512)
+```
+
+### 2. Catppuccin Mocha colors
 
 ```toml
 [global]

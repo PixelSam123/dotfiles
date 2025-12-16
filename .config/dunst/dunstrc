@@ -1,9 +1,17 @@
 [global]
-force_xwayland = true
+enable_recursive_icon_lookup = true
+
+scale = 1
+font = Iosevka SS09 21
+
+min_icon_size = 96
+max_icon_size = 96
+frame_width   = 4
+width         = (320, 640)
+height        = (0,   640)
 
 frame_color = "#88c0d0"
 separator_color = frame
-font = Iosevka SS09 12
 
 [urgency_low]
 background = "#2e3440"
