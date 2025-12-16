@@ -182,7 +182,6 @@ textbox-prompt-colon {
 }
 
 listview {
-	lines: 10;
 	border: 0;
 	spacing: 0;
 	padding: 16px 0 0 0;
@@ -194,7 +193,7 @@ scrollbar {
 }
 
 element-icon {
-	padding: 8px;
+	padding: 4px 28px 4px 16px;
 	size: 56px;
 }
 

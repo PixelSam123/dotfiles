@@ -197,8 +197,7 @@ window {
 }
 
 element-icon {
-	padding: 6px;
-	size: 32px;
+	size: 48px;
 }
 ```
 
