@@ -4,12 +4,14 @@ enable_recursive_icon_lookup = true
 scale = 1
 font = Iosevka SS09 28px
 
-min_icon_size = 96
-max_icon_size = 96
-frame_width   = 4
-padding       = 16
-width         = (320, 640)
-height        = (0,   640)
+min_icon_size      = 96
+max_icon_size      = 96
+frame_width        = 4
+width              = (320, 640)
+height             = (0,   640)
+padding            = 16
+horizontal_padding = 16
+text_icon_padding  = 16
 
 frame_color = "#88c0d0"
 separator_color = frame

@@ -52,12 +52,14 @@ feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 scale = 1
 font = Iosevka SS09 20px
 
-min_icon_size = 64
-max_icon_size = 64
-frame_width   = 3
-padding       = 12
-width         = (256, 512)
-height        = (0,   512)
+min_icon_size      = 64
+max_icon_size      = 64
+frame_width        = 3
+width              = (256, 512)
+height             = (0,   512)
+padding            = 12
+horizontal_padding = 12
+text_icon_padding  = 12
 ```
 
 ### 2. Catppuccin Mocha colors
