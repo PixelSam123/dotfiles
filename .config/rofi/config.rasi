@@ -158,6 +158,7 @@ configuration {
 	selected-active-foreground: #ebcb8b;
 	selected-active-background: #434c5e;
 	prompt-color: #8fbcbb;
+	handle-color: @selected-normal-background;
 }
 
 window {
@@ -184,7 +185,12 @@ listview {
 	lines: 10;
 	border: 0;
 	spacing: 0;
-	padding: 16px 0 0;
+	padding: 16px 0 0 0;
+}
+
+scrollbar {
+	handle-color: @handle-color;
+	padding: 0 0 0 8px;
 }
 
 element-icon {
