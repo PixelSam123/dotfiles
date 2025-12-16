@@ -2,11 +2,12 @@
 enable_recursive_icon_lookup = true
 
 scale = 1
-font = Iosevka SS09 21
+font = Iosevka SS09 28px
 
 min_icon_size = 96
 max_icon_size = 96
 frame_width   = 4
+padding       = 16
 width         = (320, 640)
 height        = (0,   640)
 
