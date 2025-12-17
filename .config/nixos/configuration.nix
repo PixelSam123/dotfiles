@@ -31,7 +31,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-olrder-than-15d";
+    options = "--delete-older-than-15d";
   };
 
   # Enable Nix flakes support.
