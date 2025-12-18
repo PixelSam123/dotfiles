@@ -31,7 +31,7 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-olrder-than-15d";
+    options = "--delete-older-than-15d";
   };
 
   # Enable Nix flakes support.
@@ -86,7 +86,7 @@
     packages = with pkgs; [
       kdePackages.kate
       gh
-      prismlauncher
+      appimage-run
       gparted
       eza
       kitty
