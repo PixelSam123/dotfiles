@@ -169,7 +169,7 @@ window {
 }
 
 inputbar {
-	padding: 0 0 0 4px;
+	padding: 0 0 0 0;
 }
 
 prompt, textbox-prompt-colon, entry, case-indicator {
@@ -193,7 +193,7 @@ scrollbar {
 }
 
 element-icon {
-	padding: 4px 28px 4px 16px;
+	padding: 4px 24px 4px 16px;
 	size: 56px;
 }
 
