@@ -86,7 +86,7 @@
     packages = with pkgs; [
       kdePackages.kate
       gh
-      prismlauncher
+      appimage-run
       gparted
       eza
       kitty
