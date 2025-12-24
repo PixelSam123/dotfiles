@@ -20,7 +20,7 @@ super + Escape
 
 # audio volume and mute
 XF86Audio{Raise,Lower}Volume
-  wpctl set-volume @DEFAULT_SINK@ 5%{+,-} --limit 1.0
+	wpctl set-volume @DEFAULT_SINK@ 5%{+,-} --limit 1.0
 XF86AudioMute
 	wpctl set-mute   @DEFAULT_SINK@ toggle
 
