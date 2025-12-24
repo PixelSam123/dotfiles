@@ -20,9 +20,9 @@ super + Escape
 
 # audio volume and mute
 XF86Audio{Raise,Lower}Volume
-	amixer -q sset Master 5%{+,-}
+  wpctl set-volume @DEFAULT_SINK@ 5%{+,-} --limit 1.0
 XF86AudioMute
-	amixer -q sset Master toggle
+	wpctl set-mute   @DEFAULT_SINK@ toggle
 
 # screenshot
 super + shift + s
@@ -50,6 +50,12 @@ super + {w,q}
 super + m
 	bspc desktop -l next
 
+# togglesplit equivalent from Hyprland
+super + o
+	bspc node @parent -R 90
+super + shift + o
+	bspc node @parent -R -90
+
 # send the newest marked node to the newest preselected node
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
@@ -57,12 +63,6 @@ super + y
 # swap the current node and the biggest node
 super + g
 	bspc node -s biggest
-
-# togglesplit equivalent from Hyprland
-super + o
-	bspc node @parent -R 90
-super + shift + o
-	bspc node @parent -R -90
 
 #
 # state/flags
@@ -80,7 +80,7 @@ super + ctrl + {m,x,y,z}
 # focus/swap
 #
 
-# focus the node in the given direction
+# focus/swap the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
