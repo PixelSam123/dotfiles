@@ -1,7 +1,7 @@
 configuration {
 	modi: "window,run,combi";
 	font: "Iosevka SS09 12";
-	combi-modi: "window,drun";
+	combi-modi: "window,drun,run";
 	show-icons: true;
 	dpi: 168;
 /*	icon-theme: "Papirus-Dark";*/
