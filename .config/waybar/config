@@ -33,7 +33,7 @@
         "critical-threshold": 80,
         "format": "<span line-height='1.1666'><span foreground='#2e3440' background='#88c0d0'> <span font='42px' line-height='0.7782' rise='-4222'></span> </span> {temperatureC}°C </span>",
         "format-critical": "<span line-height='1.1666'><span foreground='#2e3440' background='#bf616a'> <span font='42px' line-height='0.7782' rise='-4222'>󰈸</span> </span> {temperatureC}°C </span>",
-        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
         "interval": 1
     },
     "clock": {
