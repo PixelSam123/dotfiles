@@ -44,6 +44,12 @@ WantedBy=multi-user.target
 
 ## Fix KDE Plasma 6 migration quirks
 
+### GTK apps look small
+
+```sh
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
+```
+
 ### SDDM doesn't scale with my DPI!
 
 Customize DPI through `General.GreeterEnvironment` in `etc/sddm.conf.d/kde_settings.conf`. For example:
