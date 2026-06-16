@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,run,combi";
-	font: "Iosevka SS09 12";
+	font: "Iosevka SS05 12";
 	combi-modi: "window,drun,run";
 	show-icons: true;
 	dpi: 168;

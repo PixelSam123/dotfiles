@@ -20,14 +20,14 @@
 }
 
 tooltip {
-    font-family: "Iosevka SS09", "Iosevka Nerd Font Mono", monospace;
+    font-family: "Iosevka SS05", "Iosevka Nerd Font Mono", monospace;
 }
 
 /* The whole bar */
 #waybar {
     background: @base;
     color: @text;
-    font-family: "Iosevka SS09", "Iosevka Nerd Font Mono", monospace;
+    font-family: "Iosevka SS05", "Iosevka Nerd Font Mono", monospace;
     font-size: 28px;
 }
 

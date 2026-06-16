@@ -50,7 +50,7 @@ feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 ```toml
 [global]
 scale = 1
-font = Iosevka SS09 20px
+font = Iosevka SS05 20px
 
 min_icon_size      = 64
 max_icon_size      = 64
@@ -96,7 +96,7 @@ uiColor=#fab387
 
 ### 1. 1440p (120 DPI) sizes
 ```ini
-font=Iosevka SS09:Regular:size=15
+font=Iosevka SS05:Regular:size=15
 line-height=32
 width=48
 
@@ -158,7 +158,7 @@ feh --bg-fill "$HOME/Pictures/Wallpapers/yourwallpaperhere.png"
 [bar/example]
 dpi         = 120
 
-font-0 = Iosevka Term SS09:size=12;4
+font-0 = Iosevka Term SS05:size=12;4
 font-1 = Iosevka Nerd Font Mono:size=18;5
 
 [module/tray]
