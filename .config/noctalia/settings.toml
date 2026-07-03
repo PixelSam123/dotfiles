@@ -46,12 +46,18 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     enabled = true
     timeout = 330.0
 
+[notification]
+background_opacity = 0.95
+
 [osd]
 background_opacity = 0.95
 
 [shell]
 corner_radius_scale = 0.0
 font_family = "Fira Sans"
+
+    [shell.panel]
+    shadow = false
 
     [shell.screenshot]
     directory = "/home/sam/Pictures/Screenshots"
