@@ -3,7 +3,6 @@ capsule = true
 center = [ "active_window" ]
 contact_shadow = true
 end = [
-    "media",
     "tray",
     "notifications",
     "clipboard",
@@ -12,12 +11,15 @@ end = [
     "volume",
     "brightness",
     "battery",
-    "temp",
+    "cputemp",
+    "gputemp",
+    "sysmon",
     "clock",
     "control-center",
     "session"
 ]
 font_family = "Iosevka Term SS05"
+font_weight = 400
 margin_edge = 0
 margin_ends = 0
 padding = 16
@@ -54,6 +56,9 @@ font_family = "Fira Sans Book"
     [shell.screenshot]
     directory = "/home/sam/Pictures/Screenshots"
 
+[system.monitor]
+gpu_poll_seconds = 1
+
 [theme]
 source = "builtin"
 builtin = "Nord"
@@ -69,3 +74,26 @@ directory = "/home/sam/Pictures"
 [weather]
 enabled = false
 refresh_minutes = 15
+
+[widget.active_window]
+max_length = 600
+min_length = 0
+
+[widget.cputemp]
+stat = "cpu_temp"
+type = "sysmon"
+
+[widget.gputemp]
+glyph = "car-turbine"
+stat = "gpu_temp"
+type = "sysmon"
+
+[widget.media]
+album_art_only = true
+
+[widget.sysmon]
+stat = "ram_pct"
+
+[widget.temp_gpu]
+glyph = "cpu"
+stat = "gpu_temp"
