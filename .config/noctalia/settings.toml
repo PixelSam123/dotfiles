@@ -1,0 +1,71 @@
+[bar.default]
+capsule = true
+center = [ "active_window" ]
+contact_shadow = true
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "temp",
+    "clock",
+    "control-center",
+    "session"
+]
+font_family = "Iosevka Term SS05"
+margin_edge = 0
+margin_ends = 0
+padding = 16
+radius = 0
+shadow = false
+thickness = 32
+widget_spacing = 8
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 300.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 330.0
+
+[osd]
+background_opacity = 0.95
+
+[shell]
+corner_radius_scale = 0.0
+font_family = "Fira Sans Book"
+
+    [shell.screenshot]
+    directory = "/home/sam/Pictures/Screenshots"
+
+[theme]
+source = "builtin"
+builtin = "Nord"
+mode = "dark"
+
+    [theme.templates]
+    enable_builtin_templates = false
+    enable_community_templates = false
+
+[wallpaper]
+directory = "/home/sam/Pictures"
+
+[weather]
+enabled = false
+refresh_minutes = 15

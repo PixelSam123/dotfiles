@@ -10,6 +10,15 @@ This config uses HJKL instead of arrow keys for navigation, and is tested on a 4
 
 This config uses the Nord theme, though Catppuccin Mocha values are available in `CONFIGURABLES.md`
 
+## 3 Jul 2026 - IMPORTANT NOTE
+
+I've decided to break parity between my X11 and Wayland config looks now.  
+This is mainly due to my decision to switch to Noctalia Shell on Hyprland which allows me to ditch many utilities on Wayland including `nm-applet`, `dunst`, `hyprpaper`, `hypridle`, `rofi` and `waybar`.
+
+In the future, I may write a Quickshell bar for X11 that matches the look of the Wayland bar, as well as implementing a working notification system and app launcher.
+
+Screenshot also isn't up-to-date, I'll update it later :P
+
 ## DE choices
 
 1. X11 - bspwm
@@ -46,6 +55,8 @@ WantedBy=multi-user.target
 
 ### GTK apps look small
 
+NOTE: No longer required on Wayland due to me migrating to the proper display fractional scaling config.
+
 ```sh
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
 ```
@@ -68,6 +79,8 @@ A new color scheme with your correct color choices will magically be made... som
 You need to Reset profile every time you make changes to your KDE color scheme though, so the values are synced.
 
 Note that this issue doesn't happen in `qt5ct`, Qt5 color schemes are still applied correctly.
+
+Or you could just install `plasma-integration` and use `QT_QPA_PLATFORMTHEME=kde`.
 
 ### Firefox does not respect my Dolphin QT6CT settings when opening downloaded file!
 

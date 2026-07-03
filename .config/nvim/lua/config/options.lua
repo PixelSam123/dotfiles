@@ -7,7 +7,7 @@ local env = vim.env
 
 opt.guifont = jit.os == "Windows" and "Iosevka SS03,Iosevka Nerd Font:h11"
   or jit.os == "OSX" and "MonaspiceNe Nerd Font:h15"
-  or "Iosevka SS05,Iosevka Nerd Font:" .. (env.XDG_CURRENT_DESKTOP == "Hyprland" and "h19.25" or "h11")
+  or "Iosevka SS05,Iosevka Nerd Font:h11"
 
 opt.shell = jit.os == "Windows" and "nu" or opt.shell
 opt.shellcmdflag = jit.os == "Windows" and "-c" or opt.shellcmdflag

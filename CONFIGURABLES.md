@@ -92,33 +92,13 @@ contrastUiColor=#1e1e2e
 uiColor=#fab387
 ```
 
-## `fuzzel`
-
-### 1. 1440p (120 DPI) sizes
-```ini
-font=Iosevka SS05:Regular:size=15
-line-height=32
-width=48
-
-[border]
-width=2
-```
-
 ## `hypr`
 
 ### 1. 1440p (120 DPI) sizes
 
 `hyprland.conf`
 ```ini
-env = QT_SCREEN_SCALE_FACTORS,1.25
-
-exec-once = hyprctl setcursor breeze_cursors 24
-
-general {
-    gaps_in     = 3
-    gaps_out    = 6
-    border_size = 3
-}
+monitor=,preferred,auto,1.25
 ```
 
 ### 2. Don't forget to set your wallpaper
