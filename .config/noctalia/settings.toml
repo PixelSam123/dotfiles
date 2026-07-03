@@ -51,13 +51,13 @@ background_opacity = 0.95
 
 [shell]
 corner_radius_scale = 0.0
-font_family = "Fira Sans Book"
+font_family = "Fira Sans"
 
     [shell.screenshot]
     directory = "/home/sam/Pictures/Screenshots"
 
 [system.monitor]
-gpu_poll_seconds = 1
+gpu_poll_seconds = 2
 
 [theme]
 source = "builtin"
