@@ -15,7 +15,7 @@ export QT_SCREEN_SCALE_FACTORS=1.25
 ### 1. 1440p (120 DPI) sizes
 
 ```
-Xcursor.size:  24
+Xcursor.size:  30
 Xft.dpi:       120
 Xft.hintstyle: hintfull
 ```
