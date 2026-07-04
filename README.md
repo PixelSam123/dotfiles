@@ -58,7 +58,7 @@ WantedBy=multi-user.target
 NOTE: No longer required on Wayland due to me migrating to the proper display fractional scaling config.
 
 ```sh
-gsettings set org.gnome.desktop.interface text-scaling-factor 1.75
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.67
 ```
 
 ### SDDM doesn't scale with my DPI!

@@ -3,7 +3,7 @@ configuration {
 	font: "Iosevka SS05 12";
 	combi-modi: "window,drun,run";
 	show-icons: true;
-	dpi: 168;
+	dpi: 160;
 /*	icon-theme: "Papirus-Dark";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
