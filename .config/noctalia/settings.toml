@@ -1,5 +1,10 @@
 [bar.default]
 capsule = true
+capsule_border = "surface_variant"
+capsule_fill = "surface"
+capsule_padding = 4.0
+capsule_radius = 4
+capsule_thickness = 0.75
 center = [ "active_window" ]
 contact_shadow = true
 end = [
@@ -26,7 +31,7 @@ padding = 16
 radius = 0
 shadow = false
 thickness = 32
-widget_spacing = 8
+widget_spacing = 4
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -52,9 +57,13 @@ background_opacity = 0.95
 [osd]
 background_opacity = 0.95
 
+    [osd.kinds]
+    volume = false
+
 [shell]
 corner_radius_scale = 0.0
 font_family = "Fira Sans"
+settings_show_advanced = true
 
     [shell.panel]
     shadow = false
