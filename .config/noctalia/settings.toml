@@ -1,3 +1,5 @@
+config_version = 13
+
 [bar.default]
 capsule = true
 capsule_border = "surface_variant"
@@ -33,6 +35,34 @@ shadow = false
 thickness = 32
 widget_spacing = 4
 
+[shell]
+corner_radius_scale = 0.0
+font_family = "Fira Sans"
+settings_show_advanced = true
+
+    [shell.panel]
+    shadow = false
+
+    [shell.screenshot]
+    directory = "/home/sam/Pictures/Screenshots"
+
+[theme]
+source = "builtin"
+builtin = "Nord"
+mode = "dark"
+
+[wallpaper]
+directory = "/home/sam/Pictures"
+
+[notification]
+background_opacity = 0.95
+
+[osd]
+background_opacity = 0.95
+
+    [osd.kinds]
+    volume = false
+
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
@@ -51,44 +81,11 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     enabled = true
     timeout = 330.0
 
-[notification]
-background_opacity = 0.95
-
-[osd]
-background_opacity = 0.95
-
-    [osd.kinds]
-    volume = false
-
-[shell]
-corner_radius_scale = 0.0
-font_family = "Fira Sans"
-settings_show_advanced = true
-
-    [shell.panel]
-    shadow = false
-
-    [shell.screenshot]
-    directory = "/home/sam/Pictures/Screenshots"
-
 [system.monitor]
 gpu_poll_seconds = 2
 
-[theme]
-source = "builtin"
-builtin = "Nord"
-mode = "dark"
-
-    [theme.templates]
-    enable_builtin_templates = false
-    enable_community_templates = false
-
-[wallpaper]
-directory = "/home/sam/Pictures"
-
 [weather]
 enabled = false
-refresh_minutes = 15
 
 [widget.active_window]
 max_length = 600
@@ -108,7 +105,3 @@ album_art_only = true
 
 [widget.sysmon]
 stat = "ram_pct"
-
-[widget.temp_gpu]
-glyph = "cpu"
-stat = "gpu_temp"
