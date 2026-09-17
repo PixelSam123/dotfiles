@@ -4,6 +4,7 @@
 
 local opt = vim.opt
 local env = vim.env
+local g = vim.g
 
 opt.guifont = jit.os == "Windows" and "Iosevka SS03,Iosevka Nerd Font:h11"
   or jit.os == "OSX" and "MonaspiceNe Nerd Font:h15"
@@ -12,3 +13,5 @@ opt.guifont = jit.os == "Windows" and "Iosevka SS03,Iosevka Nerd Font:h11"
 opt.shell = jit.os == "Windows" and "nu" or opt.shell
 opt.shellcmdflag = jit.os == "Windows" and "-c" or opt.shellcmdflag
 opt.shellxquote = jit.os == "Windows" and "" or opt.shellxquote
+
+g.neovide_opacity = 0.95
